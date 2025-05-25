@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Funke!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <img src="funke1.jpg" class="top-img" alt="Funke Top Image">
+        <h1>Happy Birthday, Funke!</h1>
+        <p class="subtitle">Click the gifts below to reveal your surprises!</p>
+        <div class="gift-grid">
+            <div class="gift-box" onclick="openMessage(0)">🎁</div>
+            <div class="gift-box" onclick="openMessage(1)">🎁</div>
+            <div class="gift-box" onclick="openMessage(2)">🎁</div>
+        </div>
+        <img src="funke2.jpg" class="middle-img" alt="Funke Middle Image">
+        <div id="message-box" class="hidden">
+            <p id="message-content"></p>
+            <button onclick="closeMessage()">Close</button>
+        </div>
+        <img src="funke3.jpg" class="bottom-img" alt="Funke Bottom Image">
+    </div>
+    <audio autoplay loop>
+        <source src="happy_birthday_simi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
